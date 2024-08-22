@@ -1,0 +1,17 @@
+body{
+	background-color: gray;
+}
+
+body.right{
+	background-color: lightblue;
+	transition: background-color 0.5s ease-in-out;
+}
+
+body.left{
+	background-color: pink;
+	transition: background-color 0.5s ease-in-out;
+}
+
+.tActive{
+	background-color: gray;
+}
