@@ -15,3 +15,7 @@ body.left{
 .tActive{
 	background-color: gray;
 }
+
+.tab-pane{
+	display: flex;
+}

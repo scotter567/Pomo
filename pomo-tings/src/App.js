@@ -48,11 +48,11 @@ function App() {
     document.body.classList.remove('left')
     document.getElementById('users-tab-jordan').style.backgroundColor = 'gray'
     document.getElementById('users-tab-pal').style.backgroundColor = ''
+    document.getElementById('check').remove()
   }
 
   function checkPW(){
     document.getElementById('check').classList.remove('shake')
-    console.log(document.getElementById('check').classList)
     if(document.getElementById('pwControl').value === process.env.REACT_APP_PW){
       setLocked(false)
       unlockAndLoad()
@@ -81,7 +81,7 @@ function App() {
       >
         <Modal.Dialog backdrop="static">
           <Modal.Header>
-            <Modal.Title>Password Check</Modal.Title>
+            <Modal.Title>Password Chec</Modal.Title>
           </Modal.Header>
 
           <Modal.Body>
@@ -101,15 +101,15 @@ function App() {
         onClick= {click}
         justify
       >
-        <Tab eventKey="jordan" title="Jordan">
-          <Timer render={side}/>
-          <Tasks render={side}/>
-          <AddTask render={side}/>
+        <Tab className="flex-column align-items-center" eventKey="jordan" title="Jordan" style={{display:'flex'}}>
+          <Timer className='timer' render={side} name={"Jordan"}/>
+          <Tasks render={side} name={"Jordan"}/>
+          <AddTask render={side} name={"Jordan"}/>
         </Tab>
-        <Tab eventKey="pal" title="Pal">
-          <Timer render={!side}/>
-          <Tasks render={!side}/>
-          <AddTask render={!side}/>
+        <Tab className="flex-column align-items-center" eventKey="pal" title="Pal" style={{display:'flex'}}>
+          <Timer className='timer' render={!side} name={"Pal"}/>
+          <Tasks render={!side} name={"Pal"}/>
+          <AddTask render={!side} name={"Pal"}/>
         </Tab>
       </Tabs>
     </>    
