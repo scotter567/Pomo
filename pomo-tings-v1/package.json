@@ -1,0 +1,24 @@
+{
+  "name": "pomo-tings-v1",
+  "version": "1.0.0",
+  "description": "its pomo but for me ye",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node index.js"
+  },
+  "keywords": [
+    "pomo",
+    "production",
+    "focus",
+    "basicAF",
+    "basicvibe",
+    "oldman",
+    "ideals",
+    "taste",
+    "vibe",
+    "didimentionvibe"
+  ],
+  "author": "",
+  "license": "ISC"
+}
